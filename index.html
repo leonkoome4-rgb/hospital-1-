@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital & Doctor Services</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>MediCare Hospital</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#doctors">Doctors</a></li>
+                <li><a href="#recommendations">Recommendations</a></li>
+                <li><a href="#recommend-doctor">Recommend</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="home-section">
+        <div class="container">
+            <div class="home-content">
+                <div class="home-text">
+                    <div class="welcome-badge">Healthcare Excellence</div>
+                    <h1>Your Health, Our Mission</h1>
+                    <p>Experience world-class medical care at MediCare Hospital. Our expert team combines cutting-edge technology with compassionate care to ensure your well-being.</p>
+
+                    <div class="home-features">
+                        <div class="feature">
+                            <span class="feature-icon">24/7</span>
+                            <span>Emergency Care</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">MD</span>
+                            <span>Expert Specialists</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">Lab</span>
+                            <span>Advanced Technology</span>
+                        </div>
+                    </div>
+
+                    <div class="home-actions">
+                        <a href="#doctors" class="btn-primary">Find a Doctor</a>
+                        <a href="#contact" class="btn-secondary">Contact Us</a>
+                    </div>
+                </div>
+
+                <div class="home-visual">
+                    <div class="hero-image-container">
+                        <img src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Modern Hospital Building" class="hero-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Animated background elements -->
+        <div class="bg-shape shape-1"></div>
+        <div class="bg-shape shape-2"></div>
+        <div class="bg-shape shape-3"></div>
+    </section>
+
+    
+    <section id="doctors">
+        <div class="container">
+            <h2>Our Doctors</h2>
+            <div class="category-filter">
+                <button class="category-btn active" data-category="all">All Specialties</button>
+            </div>
+            <div class="category-groups">
+                <div class="category-group">
+                    <h3>Medical Specialties</h3>
+                    <div class="category-buttons">
+                        <button class="category-btn" data-category="cardiology">Cardiology</button>
+                        <button class="category-btn" data-category="dermatology">Dermatology</button>
+                        <button class="category-btn" data-category="neurology">Neurology</button>
+                        <button class="category-btn" data-category="pediatrics">Pediatrics</button>
+                        <button class="category-btn" data-category="psychiatry">Psychiatry</button>
+                        <button class="category-btn" data-category="oncology">Oncology</button>
+                        <button class="category-btn" data-category="gastroenterology">Gastroenterology</button>
+                        <button class="category-btn" data-category="endocrinology">Endocrinology</button>
+                    </div>
+                </div>
+                <div class="category-group">
+                    <h3>Surgical Specialties</h3>
+                    <div class="category-buttons">
+                        <button class="category-btn" data-category="orthopedics">Orthopedics</button>
+                        <button class="category-btn" data-category="ophthalmology">Ophthalmology</button>
+                        <button class="category-btn" data-category="ent">ENT</button>
+                        <button class="category-btn" data-category="urology">Urology</button>
+                        <button class="category-btn" data-category="gynecology">Gynecology</button>
+                    </div>
+                </div>
+                <div class="category-group">
+                    <h3>Other Specialties</h3>
+                    <div class="category-buttons">
+                        <button class="category-btn" data-category="radiology">Radiology</button>
+                        <button class="category-btn" data-category="anesthesiology">Anesthesiology</button>
+                        <button class="category-btn" data-category="general">General Practice</button>
+                    </div>
+                </div>
+            </div>
+            <div class="doctors-grid" id="doctors-grid">
+                <!-- Doctors will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <section id="recommendations">
+        <div class="container">
+            <h2>Doctor Recommendations</h2>
+            <p>Discover top-rated doctors recommended by our patients and community</p>
+            <div class="recommendations-grid">
+                <div class="recommendation-card">
+                    <div class="recommendation-header">
+                        <img src="https://via.placeholder.com/60" alt="Patient">
+                        <div>
+                            <h4>Sarah M.</h4>
+                            <div class="rating">★★★★★</div>
+                        </div>
+                    </div>
+                    <p>"Dr. John Smith is an exceptional cardiologist. His expertise and caring approach made my treatment experience wonderful."</p>
+                    <span class="recommended-doctor">Recommends: Dr. John Smith</span>
+                </div>
+                <div class="recommendation-card">
+                    <div class="recommendation-header">
+                        <img src="https://via.placeholder.com/60" alt="Patient">
+                        <div>
+                            <h4>Michael K.</h4>
+                            <div class="rating">★★★★★</div>
+                        </div>
+                    </div>
+                    <p>"Dr. Sarah Johnson has been amazing with my children. Highly recommend her pediatric care."</p>
+                    <span class="recommended-doctor">Recommends: Dr. Sarah Johnson</span>
+                </div>
+                <div class="recommendation-card">
+                    <div class="recommendation-header">
+                        <img src="https://via.placeholder.com/60" alt="Patient">
+                        <div>
+                            <h4>Emily R.</h4>
+                            <div class="rating">★★★★★</div>
+                        </div>
+                    </div>
+                    <p>"Dr. Michael Brown performed my knee surgery perfectly. Recovery was smooth and I'm back to my active lifestyle."</p>
+                    <span class="recommended-doctor">Recommends: Dr. Michael Brown</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="recommend-doctor">
+        <div class="container">
+            <h2>Recommend a Doctor</h2>
+            <p>Know a great doctor? Help us expand our network by recommending qualified healthcare professionals.</p>
+            <form id="recommend-doctor-form">
+                <div class="form-row">
+                    <input type="text" id="recommender-name" placeholder="Your Name" required>
+                    <input type="email" id="recommender-email" placeholder="Your Email" required>
+                </div>
+                <div class="form-row">
+                    <input type="text" id="doctor-name" placeholder="Doctor's Full Name" required>
+                    <input type="text" id="doctor-specialty" placeholder="Specialty (e.g., Cardiology, Pediatrics)" required>
+                </div>
+                <div class="form-row">
+                    <input type="text" id="doctor-location" placeholder="Location/City" required>
+                    <input type="tel" id="doctor-phone" placeholder="Phone Number (optional)">
+                </div>
+                <textarea id="recommendation-reason" placeholder="Why do you recommend this doctor? Please share your experience or what makes them stand out." required></textarea>
+                <button type="submit">Submit Recommendation</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Doctor Details Modal -->
+    <div id="doctor-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <div class="doctor-info">
+                    <img id="doctor-image" src="" alt="Doctor">
+                    <h3 id="doctor-name"></h3>
+                    <p id="doctor-specialty"></p>
+                    <div class="rating" id="doctor-rating"></div>
+                    <p id="doctor-description"></p>
+                    <p><strong>Experience:</strong> <span id="doctor-experience"></span></p>
+                    <p><strong>Education:</strong> <span id="doctor-education"></span></p>
+                </div>
+                <div class="booking-section">
+                    <h3>Book Appointment</h3>
+                    <form id="booking-form">
+                        <input type="text" id="patient-name" placeholder="Your Name" required>
+                        <input type="email" id="patient-email" placeholder="Your Email" required>
+                        <input type="tel" id="patient-phone" placeholder="Your Phone" required>
+                        <input type="date" id="appointment-date" required>
+                        <select id="appointment-time" required>
+                            <option value="">Select Time</option>
+                            <option value="09:00">9:00 AM</option>
+                            <option value="10:00">10:00 AM</option>
+                            <option value="11:00">11:00 AM</option>
+                            <option value="14:00">2:00 PM</option>
+                            <option value="15:00">3:00 PM</option>
+                            <option value="16:00">4:00 PM</option>
+                        </select>
+                        <textarea id="appointment-reason" placeholder="Reason for visit" required></textarea>
+                        <button type="submit">Book Appointment</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="about-header">
+                <h2>About MediCare Hospital</h2>
+                <p class="about-subtitle">Excellence in Healthcare Since 2001</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-main">
+                    <div class="about-text">
+                        <p>MediCare Hospital has been a cornerstone of healthcare excellence in our community for over two decades. Founded in 2001, we have grown from a small clinic to a comprehensive medical center serving thousands of patients annually.</p>
+
+                        <p>Our commitment to patient-centered care, combined with state-of-the-art medical technology and a team of highly qualified healthcare professionals, ensures that every patient receives the highest standard of treatment in a compassionate and supportive environment.</p>
+
+                        <p>We believe that healthcare is not just about treating illnesses, but about promoting wellness, preventing disease, and supporting our patients through every stage of their health journey.</p>
+                    </div>
+                </div>
+
+                <div class="about-values">
+                    <div class="value-card">
+                        <div class="value-icon">Mission</div>
+                        <h3>Our Mission</h3>
+                        <p>To provide exceptional healthcare services that improve the quality of life for our patients and community through compassionate, innovative, and accessible medical care.</p>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="value-icon">Vision</div>
+                        <h3>Our Vision</h3>
+                        <p>To be the leading healthcare institution recognized for medical excellence, patient satisfaction, and community health advancement.</p>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="value-icon">Values</div>
+                        <h3>Our Values</h3>
+                        <p>Compassion, integrity, excellence, innovation, and respect guide everything we do in our pursuit of better health outcomes.</p>
+                    </div>
+                </div>
+
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">25+</div>
+                        <div class="stat-label">Years of Service</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">150+</div>
+                        <div class="stat-label">Expert Doctors</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">50,000+</div>
+                        <div class="stat-label">Patients Served</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">Patient Satisfaction</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Emergency Care</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">15</div>
+                        <div class="stat-label">Specialties</div>
+                    </div>
+                </div>
+
+                <div class="about-cta">
+                    <h3>Ready to Experience Quality Healthcare?</h3>
+                    <p>Join thousands of satisfied patients who trust MediCare Hospital for their healthcare needs.</p>
+                    <div class="cta-buttons">
+                        <a href="#doctors" class="btn-primary">Book Appointment</a>
+                        <a href="#contact" class="btn-secondary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>MediCare Hospital</h4>
+                    <p>Providing exceptional healthcare services with compassion and excellence since 2001.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#doctors">Our Doctors</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>phone: +254706140214<br><br>Email: ianmutum@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MediCare Hospital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
