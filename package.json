@@ -2,20 +2,24 @@
   "name": "hospital",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://github.com/leonkoome4-rgb/hospital-#readme",
-  "bugs": {
-    "url": "https://github.com/leonkoome4-rgb/hospital-/issues"
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "json-server --watch db.json --port ${PORT:-3010}"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/leonkoome4-rgb/hospital-.git"
   },
-  "license": "ISC",
+  "keywords": [],
   "author": "",
+  "license": "ISC",
   "type": "commonjs",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "json-server --watch db.json --port ${PORT:-3010}"
+  "bugs": {
+    "url": "https://github.com/leonkoome4-rgb/hospital-/issues"
+  },
+  "homepage": "https://github.com/leonkoome4-rgb/hospital-#readme",
+  "dependencies": {
+    "json-server": "^1.0.0-beta.15"
   }
 }
