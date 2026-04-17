@@ -435,28 +435,6 @@ window.onclick = function(event) {
         modal.style.display = 'none';
     }
 }
-
-// Booking form submission
-document.getElementById('booking-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    const formData = {
-        doctor: document.getElementById('doctor-name').textContent,
-        patientName: document.getElementById('patient-name').value,
-        email: document.getElementById('patient-email').value,
-        phone: document.getElementById('patient-phone').value,
-        date: document.getElementById('appointment-date').value,
-        time: document.getElementById('appointment-time').value,
-        reason: document.getElementById('appointment-reason').value
-    };
-    
-    // Simulate booking submission
-    alert(`Appointment booked successfully!\n\nDoctor: ${formData.doctor}\nDate: ${formData.date}\nTime: ${formData.time}\n\nYou will receive a confirmation email shortly.`);
-    
-    modal.style.display = 'none';
-    this.reset();
-});
-
 // Initialize doctors on page load
 document.addEventListener('DOMContentLoaded', () => {
     renderDoctors();
@@ -666,3 +644,42 @@ function autoDetectLocation() {
         }
     );
 }
+document.addEventListener("DOMContentLoaded", function () {
+
+  document.getElementById("booking-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    
+    const name = document.getElementById("patient-name").value
+    const email = document.getElementById("patient-email").value
+    const phone = document.getElementById("patient-phone").value
+    const date = document.getElementById("appointment-date").value
+    const time = document.getElementById("appointment-time").value
+    const reason = document.getElementById("appointment-reason").value
+ const data ={
+        name : name,
+        email : email,
+        phone : phone,
+        date : date,
+        time : time,
+        reason : reason
+ }   
+
+    fetch("http://localhost:3010/appointments", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(data)
+    })
+    .then(res => res.json())
+    .then(result => {
+      console.log("Saved:", result);
+      alert("Appointment sent successfully!");
+    })
+    .catch(err => console.error("Error:", err));
+
+  });
+
+});app.use(cors());
+app.use(express.json());

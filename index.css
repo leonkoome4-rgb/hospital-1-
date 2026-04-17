@@ -155,6 +155,7 @@ nav {
     color: white;
     text-transform: capitalize;
     letter-spacing: 0.02em;
+    text-decoration: underline;
 }
 
 .home-text p {

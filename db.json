@@ -1,0 +1,14 @@
+{
+  "appointments": [
+    {
+      "name": "leon koome ",
+      "email": "leonkoome4@gmail.com",
+      "phone": "0731874751",
+      "date": "2026-04-01",
+      "time": "16:00",
+      "reason": "my skin rash \n",
+      "id": "IJjXjU3q3ao"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
