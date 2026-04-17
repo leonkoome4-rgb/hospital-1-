@@ -8,6 +8,15 @@
       "time": "16:00",
       "reason": "my skin rash \n",
       "id": "IJjXjU3q3ao"
+    },
+    {
+      "name": "kfvjfdgjdfkjbgkjdfb",
+      "email": "leonkoome4@gmail.com",
+      "phone": "77496797695",
+      "date": "2026-04-14",
+      "time": "10:00",
+      "reason": "ndjvbkfbvkbnfk",
+      "id": "AMWgWEfbwBw"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
