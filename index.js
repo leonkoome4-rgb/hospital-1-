@@ -1,207 +1,329 @@
 // Doctor data
 const doctors = [
-{
-id: 1,
-name: "Dr. John Smith",
-specialty: "Cardiology",
-category: "cardiology",
-rating: 5,
-image: "https://via.placeholder.com/150",
-description: "Expert cardiologist with over 15 years of experience in heart disease treatment.",
-experience: "15 years",
-education: "MD from Harvard Medical School",
-county: "Nairobi",
-subcounty: "Westlands"
-},
-{
-id: 2,
-name: "Dr. Sarah Johnson",
-specialty: "Pediatrics",
-category: "pediatrics",
-rating: 4,
-image: "https://via.placeholder.com/150",
-description: "Dedicated pediatrician specializing in child healthcare and development.",
-experience: "12 years",
-education: "MD from Johns Hopkins University",
-county: "Mombasa",
-subcounty: "Likoni"
-},
-{
-id: 3,
-name: "Dr. Michael Brown",
-specialty: "Orthopedics",
-category: "orthopedics",
-rating: 5,
-image: "https://via.placeholder.com/150",
-description: "Skilled orthopedic surgeon focusing on joint replacements and sports injuries.",
-experience: "18 years",
-education: "MD from Mayo Clinic"
-},
-{
-id: 4,
-name: "Dr. Emily Davis",
-specialty: "Cardiology",
-category: "cardiology",
-rating: 4,
-image: "https://via.placeholder.com/150",
-description: "Cardiologist specializing in preventive cardiology and heart failure management.",
-experience: "10 years",
-education: "MD from Stanford University"
-},
-{
-id: 5,
-name: "Dr. Robert Wilson",
-specialty: "Pediatrics",
-category: "pediatrics",
-rating: 5,
-image: "https://via.placeholder.com/150",
-description: "Pediatric specialist with expertise in neonatal care and childhood diseases.",
-experience: "14 years",
-education: "MD from University of Pennsylvania"
-},
-{
-id: 6,
-name: "Dr. Lisa Chen",
-specialty: "Dermatology",
-category: "dermatology",
-rating: 4,
-image: "https://via.placeholder.com/150",
-description: "Dermatologist specializing in skin conditions, cosmetic procedures, and skin cancer screening.",
-experience: "11 years",
-education: "MD from UCLA Medical School"
-},
-{
-id: 7,
-name: "Dr. David Lee",
-specialty: "Neurology",
-category: "neurology",
-rating: 5,
-image: "https://via.placeholder.com/150",
-description: "Neurologist with expertise in brain disorders, epilepsy, and neurodegenerative diseases.",
-experience: "16 years",
-education: "MD from Columbia University"
-},
-{
-id: 8,
-name: "Dr. Maria Garcia",
-specialty: "Gynecology",
-category: "gynecology",
-rating: 4,
-image: "https://via.placeholder.com/150",
-description: "Gynecologist providing comprehensive women's health care and reproductive services.",
-experience: "13 years",
-education: "MD from University of Michigan"
-},
-{
-id: 9,
-name: "Dr. James Taylor",
-specialty: "Psychiatry",
-category: "psychiatry",
-rating: 5,
-image: "https://via.placeholder.com/150",
-description: "Psychiatrist specializing in mental health disorders and psychotherapy.",
-experience: "17 years",
-education: "MD from Yale University"
-},
-{
-id: 10,
-name: "Dr. Anna Patel",
-specialty: "Oncology",
-category: "oncology",
-rating: 5,
-image: "https://via.placeholder.com/150",
-description: "Oncologist focused on cancer diagnosis, treatment, and patient care.",
-experience: "19 years",
-education: "MD from Duke University"
-},
-{
-id: 11,
-name: "Dr. Kevin Wright",
-specialty: "Ophthalmology",
-category: "ophthalmology",
-rating: 4,
-image: "https://via.placeholder.com/150",
-description: "Ophthalmologist specializing in eye diseases, surgery, and vision correction.",
-experience: "12 years",
-education: "MD from Baylor College of Medicine"
-},
-{
-id: 12,
-name: "Dr. Rachel Adams",
-specialty: "ENT",
-category: "ent",
-rating: 4,
-image: "https://via.placeholder.com/150",
-description: "ENT specialist treating ear, nose, and throat disorders.",
-experience: "10 years",
-education: "MD from University of Texas"
-},
-{
-id: 13,
-name: "Dr. Thomas Moore",
-specialty: "Urology",
-category: "urology",
-rating: 5,
-image: "https://via.placeholder.com/150",
-description: "Urologist specializing in urinary tract and male reproductive system disorders.",
-experience: "15 years",
-education: "MD from Northwestern University"
-},
-{
-id: 14,
-name: "Dr. Jennifer White",
-specialty: "Gastroenterology",
-category: "gastroenterology",
-rating: 4,
-image: "https://via.placeholder.com/150",
-description: "Gastroenterologist treating digestive system disorders and liver diseases.",
-experience: "13 years",
-education: "MD from Vanderbilt University"
-},
-{
-id: 15,
-name: "Dr. Mark Johnson",
-specialty: "Endocrinology",
-category: "endocrinology",
-rating: 5,
-image: "https://via.placeholder.com/150",
-description: "Endocrinologist specializing in hormone disorders and diabetes management.",
-experience: "14 years",
-education: "MD from University of Pittsburgh"
-},
-{
-id: 16,
-name: "Dr. Susan Lee",
-specialty: "Radiology",
-category: "radiology",
-rating: 4,
-image: "https://via.placeholder.com/150",
-description: "Radiologist using imaging technologies for diagnosis and treatment planning.",
-experience: "16 years",
-education: "MD from University of Washington"
-},
-{
-id: 17,
-name: "Dr. Paul Martinez",
-specialty: "Anesthesiology",
-category: "anesthesiology",
-rating: 4,
-image: "https://via.placeholder.com/150",
-description: "Anesthesiologist providing pain management and surgical anesthesia services.",
-experience: "18 years",
-education: "MD from University of Florida"
-},
-{
-id: 18,
-name: "Dr. Linda Thompson",
-specialty: "General Practice",
-category: "general",
-rating: 5,
-image: "https://via.placeholder.com/150",
-description: "General practitioner offering comprehensive primary healthcare services.",
-experience: "20 years",
-education: "MD from University of California, San Francisco"
-}
+  {
+    id: 1,
+    name: "Dr. Charles Kariuki",
+    specialty: "Cardiologist",
+    category: "Cardiologist",
+    rating: 5,
+    image: "https://i.pinimg.com/736x/5a/cd/8f/5acd8fd8b3e225e883acd1cae417abb9.jpg ",
+    location: "Nairobi Hospital Drs Plaza Entrance",
+    phone: ["0733-370057", "0720-826788"],
+    email: "credit@silversteinkariuki.com",
+    description: "Experienced cardiologist providing comprehensive heart care at Nairobi Hospital.",
+    experience: "18 years",
+    education: "MBChB, MMed Cardiology",
+    county: "Nairobi",
+    subcounty: ""
+  },
+  {
+    id: 2,
+    name: "Dr. Wanyoike M.M.",
+    specialty: "Cardiologist",
+    category: "Cardiologist",
+    facility: "Prime Care Heart Clinic",
+    rating: 5,
+    image: "https://i.pinimg.com/736x/5a/cd/8f/5acd8fd8b3e225e883acd1cae417abb9.jpg ",
+    location: "Anderson Centre, Nairobi Hospital, 4th Floor",
+    phone: ["2846322", "8068550", "0710828016", "0730666322"],
+    email: "primecareheartclinic@gmail.com",
+    description: "Cardiologist at Prime Care Heart Clinic offering personalized cardiac care and diagnostics.",
+    experience: "20 years",
+    education: "MBChB, MMed Cardiology",
+    county: "Nairobi",
+    subcounty: ""
+  },
+  {
+    id: 3,
+    name: "Dr. Kariuki J N.K.",
+    specialty: "Cardiothoracic Surgeon",
+    category: "Cardiothoracic Surgeon",
+    rating: 5,
+    image: "https://i.pinimg.com/736x/5a/cd/8f/5acd8fd8b3e225e883acd1cae417abb9.jpg",
+    location: "Nairobi Hospital Drs Plaza, 3rd Floor Room 301",
+    phone: ["0202720726", "0202711585", "0722582548"],
+    email: "kariuki.j50@gmail.com",
+    description: "Cardiothoracic surgeon specializing in advanced heart and chest surgery.",
+    experience: "22 years",
+    education: "MBChB, MMed Cardiothoracic Surgery",
+    county: "Nairobi",
+    subcounty: ""
+  },
+  {
+    id: 4,
+    name: "Dr. Chakaya J.M",
+    specialty: "Chest Specialist",
+    category: "Chest Specialist",
+    rating: 4,
+    image: "https://i.pinimg.com/736x/5a/cd/8f/5acd8fd8b3e225e883acd1cae417abb9.jpg ",
+    location: "Fortis Suites, 4th Floor Room 404, Hospital Road",
+    phone: ["0203597094", "0725522915", "0721977304"],
+    email: "chakayajm@gmail.com",
+    description: "Chest specialist delivering expert respiratory and pulmonary care.",
+    experience: "16 years",
+    education: "MBChB, Pulmonology Certification",
+    county: "Nairobi",
+    subcounty: ""
+  },
+  {
+    id: 5,
+    name: "Dr. Imalingat Wairimu",
+    specialty: "Dermatologist",
+    category: "Dermatologist",
+    rating: 4,
+    image: "https://i.pinimg.com/736x/5a/cd/8f/5acd8fd8b3e225e883acd1cae417abb9.jpg ",
+    location: "Prof Nelson Awori Centre, 2nd Floor Room A1",
+    phone: ["0713168580", "0721653514"],
+    email: "wimalingaoffice@yahoo.com",
+    description: "Dermatologist treating skin conditions and cosmetic skin concerns.",
+    experience: "12 years",
+    education: "MBChB, Dermatology Fellowship",
+    county: "Nairobi",
+    subcounty: ""
+  },
+  {
+    id: 6,
+    name: "Amani Counselling Centre",
+    specialty: "Psychologist",
+    category: "Psychologist",
+    rating: 4,
+    image: "https://i.pinimg.com/736x/5a/cd/8f/5acd8fd8b3e225e883acd1cae417abb9.jpg ",
+    location: "Mbagathi Way, Nairobi",
+    phone: ["+254722626590", "+254733263870"],
+    email: "info@amanicentre.org",
+    description: "Counselling centre offering psychological support and wellness services.",
+    experience: "10 years",
+    education: "Certified Psychologists",
+    county: "Nairobi",
+    subcounty: ""
+  },
+  {
+    id: 10,
+    name: "Enclaire Counselling Centre",
+    specialty: "Psychologist",
+    category: "Psychologist",
+    rating: 4,
+    image: "https://i.pinimg.com/736x/5a/cd/8f/5acd8fd8b3e225e883acd1cae417abb9.jpg ",
+    location: "Nyanja House, Ngong Road",
+    phone: ["+254729903001", "0202332512"],
+    email: "ennyanja@hotmail.com",
+    description: "Professional counselling services for mental health and wellness.",
+    experience: "8 years",
+    education: "Certified Counsellors",
+    county: "Nairobi",
+    subcounty: ""
+  },
+  {
+    id: 11,
+    name: "KAPC",
+    specialty: "Psychologist",
+    category: "Psychologist",
+    facility: "Kenya Association of Professional Counsellors",
+    rating: 4,
+    image: "https://i.pinimg.com/736x/5a/cd/8f/5acd8fd8b3e225e883acd1cae417abb9.jpg ",
+    location: "Parklands, Nairobi",
+    phone: ["+254721296912", "+254733761242"],
+    email: "kapcmsa@gmail.com",
+    description: "Association providing professional counselling and psychological support services.",
+    experience: "15 years",
+    education: "Licensed Counsellors",
+    county: "Nairobi",
+    subcounty: ""
+  },
+  {
+    id: 13,
+    name: "Dr. Doreen A. Asimba",
+    specialty: "Endocrinologist",
+    category: "Endocrinologist",
+    rating: 5,
+    image: "https://i.pinimg.com/736x/5a/cd/8f/5acd8fd8b3e225e883acd1cae417abb9.jpg ",
+    location: "Nairobi Hospital Doctors Plaza, Ground Floor",
+    phone: ["0208073284", "+254733757754", "+254720839106"],
+    email: "dr.asimba_clinic@yahoo.com",
+    description: "Endocrinologist specializing in diabetes and hormone care.",
+    experience: "15 years",
+    education: "MBChB, Endocrinology Fellowship",
+    county: "Nairobi",
+    subcounty: ""
+  },
+  {
+    id: 14,
+    name: "Dr. Eva Njenga",
+    specialty: "Endocrinologist",
+    category: "Endocrinologist",
+    rating: 5,
+    image: "https://i.pinimg.com/736x/5a/cd/8f/5acd8fd8b3e225e883acd1cae417abb9.jpg",
+    location: "5th Avenue Office Suites",
+    phone: ["2722826", "+254726119729"],
+    email: "Dr.evanjenga@gmail.com",
+    description: "Endocrinologist with expertise in diabetes management and metabolic disorders.",
+    experience: "14 years",
+    education: "MBChB, Endocrinology Fellowship",
+    county: "Nairobi",
+    subcounty: ""
+  },
+  {
+    id: 15,
+    name: "Dr. Sangeeta Chauhan",
+    specialty: "Endocrinologist",
+    category: "Endocrinologist",
+    rating: 5,
+    image: "https://i.pinimg.com/736x/5a/cd/8f/5acd8fd8b3e225e883acd1cae417abb9.jpg",
+    location: "Aga Khan Doctors Plaza",
+    phone: ["+254711092720", "0203747417"],
+    email: "sangeeta.chauhan@aku.edu",
+    description: "Endocrinologist specializing in hormone disorders and metabolic conditions.",
+    experience: "17 years",
+    education: "MBChB, Endocrinology Fellowship",
+    county: "Nairobi",
+    subcounty: ""
+  },
+  {
+    id: 16,
+    name: "Dr. Sonigra R.J.",
+    specialty: "ENT Specialist",
+    category: "ENT Specialist",
+    rating: 4,
+    image: "https://i.pinimg.com/736x/5a/cd/8f/5acd8fd8b3e225e883acd1cae417abb9.jpg ",
+    location: "Prof Nelson Awori Centre",
+    phone: ["+254739262455", "+254710922569"],
+    email: "ybsonigra@gmail.com",
+    description: "ENT specialist focused on ear, nose, and throat health.",
+    experience: "14 years",
+    education: "MBChB, ENT Fellowship",
+    county: "Nairobi",
+    subcounty: ""
+  },
+  {
+    id: 17,
+    name: "Dr. Gacani Mberia",
+    specialty: "ENT Specialist",
+    category: "ENT Specialist",
+    rating: 4,
+    image: "https://i.pinimg.com/736x/5a/cd/8f/5acd8fd8b3e225e883acd1cae417abb9.jpg ",
+    location: "Mater Hospital Doctors Plaza",
+    phone: ["0202064313", "+254722703238"],
+    email: "gmberia@yahoo.com",
+    description: "Experienced ENT specialist treating ear, nose, throat, and hearing disorders.",
+    experience: "15 years",
+    education: "MBChB, ENT Fellowship",
+    county: "Nairobi",
+    subcounty: ""
+  },
+  {
+    id: 18,
+    name: "Valley ENT Clinic",
+    specialty: "ENT Specialist",
+    category: "ENT Specialist",
+    facility: "Valley ENT",
+    rating: 4,
+    image: "https://i.pinimg.com/736x/5a/cd/8f/5acd8fd8b3e225e883acd1cae417abb9.jpg ",
+    location: "Afya Centre / Mayfair Centre",
+    phone: ["0716050329"],
+    email: "valleyent@yahoo.com",
+    description: "Specialized ENT clinic providing comprehensive ear, nose, and throat care.",
+    experience: "12 years",
+    education: "ENT Specialists",
+    county: "Nairobi",
+    subcounty: ""
+  },
+  {
+    id: 19,
+    name: "Dr. Toroitich Kibowen",
+    specialty: "General Practitioner",
+    category: "General Practitioner",
+    rating: 4,
+    image: "https://i.pinimg.com/736x/5a/cd/8f/5acd8fd8b3e225e883acd1cae417abb9.jpg ",
+    location: "Bruce House, Nairobi CBD",
+    phone: ["0202224426"],
+    email: "jktoroich@gmail.com",
+    description: "General practitioner offering trusted primary care services in the CBD.",
+    experience: "18 years",
+    education: "MBChB, General Practice Training",
+    county: "Nairobi",
+    subcounty: ""
+  },
+  {
+    id: 20,
+    name: "Dr. Richard Njoroge Kuria",
+    specialty: "General Practitioner",
+    category: "General Practitioner",
+    facility: "Ivory Health Solutions",
+    rating: 4,
+    image: "https://i.pinimg.com/736x/5a/cd/8f/5acd8fd8b3e225e883acd1cae417abb9.jpg ",
+    location: "Corner House, Nairobi CBD",
+    phone: ["+254791009817", "+254791009818"],
+    email: "info@ivoryhealth.co.ke",
+    description: "General practitioner providing comprehensive primary healthcare and diagnostics.",
+    experience: "12 years",
+    education: "MBChB, General Practice Training",
+    county: "Nairobi",
+    subcounty: ""
+  },
+  {
+    id: 21,
+    name: "Dr. Wangata Theophilus",
+    specialty: "General Practitioner",
+    category: "General Practitioner",
+    rating: 4,
+    image: "https://i.pinimg.com/736x/5a/cd/8f/5acd8fd8b3e225e883acd1cae417abb9.jpg ",
+    location: "Lonrho House, Nairobi",
+    phone: ["0202027314", "+254713749001", "+254722680117"],
+    email: "dr_wangata@yahoo.com",
+    description: "General practitioner delivering quality primary care and health consultations.",
+    experience: "13 years",
+    education: "MBChB, General Practice Training",
+    county: "Nairobi",
+    subcounty: ""
+  },
+  {
+    id: 10,
+    name: "Dr. Betty Musau",
+    specialty: "Gastroenterologist",
+    category: "Gastroenterologist",
+    rating: 5,
+    image: "https://i.pinimg.com/736x/5a/cd/8f/5acd8fd8b3e225e883acd1cae417abb9.jpg ",
+    location: "Nairobi Hospital Drs Plaza, 2nd Floor Room 206",
+    phone: ["0202722302", "0721552582"],
+    email: "bmmm24@gmail.com",
+    description: "Gastroenterologist treating digestive health and liver conditions.",
+    experience: "17 years",
+    education: "MBChB, Gastroenterology Fellowship",
+    county: "Nairobi",
+    subcounty: ""
+  },
+  {
+    id: 11,
+    name: "Dr. Ndege Kinoti Anthony",
+    specialty: "Neurologist",
+    category: "Neurologist",
+    rating: 5,
+    image: "https://i.pinimg.com/736x/5a/cd/8f/5acd8fd8b3e225e883acd1cae417abb9.jpg ",
+    location: "Fortis Suites, 5th Floor Room 507",
+    phone: ["0705700000", "0721596464"],
+    email: "upperhillclinics@gmail.com",
+    description: "Neurologist specializing in brain and nervous system care.",
+    experience: "16 years",
+    education: "MBChB, Neurology Fellowship",
+    county: "Nairobi",
+    subcounty: ""
+  },
+  {
+    id: 12,
+    name: "Dr. Matu Joshua",
+    specialty: "Urologist",
+    category: "Urologist",
+    rating: 4,
+    image: "https://i.pinimg.com/736x/5a/cd/8f/5acd8fd8b3e225e883acd1cae417abb9.jpg ",
+    location: "Prof Nelson Awori Centre, 2nd Floor Suite B6",
+    phone: ["0722518048", "0202424159"],
+    email: "matumaliti@yahoo.com",
+    description: "Urologist treating urinary tract and kidney conditions.",
+    experience: "15 years",
+    education: "MBChB, Urology Fellowship",
+    county: "Nairobi",
+    subcounty: ""
+  }
 ];
 
 let currentRating = 0;
@@ -275,24 +397,39 @@ const hasMore = filteredDoctors.length > limit;
 
 doctorsToShow.forEach(doctor => {
 const doctorCard = document.createElement('div');
-doctorCard.className = 'doctor-card';
+doctorCard.className = 'bg-white rounded-xl shadow-md hover:shadow-2xl transition duration-300 cursor-pointer overflow-hidden border border-gray-100 hover:border-primary';
 doctorCard.innerHTML = `
-           <img src="${doctor.image}" alt="${doctor.name}">
-           <h3>${doctor.name}</h3>
-           <p>${doctor.specialty}</p>
-           <div class="rating">${generateStars(doctor.rating)}</div>
-       `;
+    <div class="relative bg-gradient-to-r from-blue-50 to-indigo-50 p-6 pb-8">
+        <img src="${doctor.image}" alt="${doctor.name}" class="w-28 h-28 rounded-full mx-auto object-cover border-4 border-white shadow-md">
+        <div class="absolute top-4 right-4 bg-yellow-400 text-white px-3 py-1 rounded-full text-sm font-bold">
+            ⭐ ${doctor.rating}/5
+        </div>
+    </div>
+    <div class="p-6">
+        <h3 class="text-lg font-bold text-gray-900 text-center mb-1">${doctor.name}</h3>
+        <p class="text-primary font-semibold text-center mb-3 text-sm">${doctor.specialty}</p>
+        <div class="space-y-2 mb-4 text-sm">
+            <p class="text-gray-600 flex items-start"><span class="text-primary mr-2">📍</span><span>${doctor.location}</span></p>
+            ${doctor.facility ? `<p class="text-gray-600 flex items-start"><span class="text-accent mr-2">🏥</span><span>${doctor.facility}</span></p>` : ''}
+            <p class="text-gray-600 flex items-start"><span class="text-accent mr-2">📞</span><span>${doctor.phone[0]}</span></p>
+        </div>
+        <p class="text-gray-600 text-sm text-center mb-4 line-clamp-2">${doctor.description}</p>
+        <button class="w-full bg-primary text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300 font-semibold text-sm">
+            <i class="fas fa-arrow-right mr-2"></i>View Profile
+        </button>
+    </div>
+`;
 doctorCard.addEventListener('click', () => openDoctorModal(doctor));
 doctorsGrid.appendChild(doctorCard);
 });
 
 // Add Load More button if there are more doctors
 if (hasMore) {
-const loadMoreBtn = document.createElement('button');
-loadMoreBtn.className = 'load-more-btn';
-loadMoreBtn.textContent = 'Load More Doctors';
+const loadMoreBtn = document.getElementById('load-more-btn');
+loadMoreBtn.style.display = 'block';
 loadMoreBtn.onclick = () => renderDoctors(category, list, limit + 6);
-doctorsGrid.appendChild(loadMoreBtn);
+} else {
+document.getElementById('load-more-btn').style.display = 'none';
 }
 }
 
@@ -334,16 +471,32 @@ feedback.textContent = 'Geolocation unavailable. Please type county and sub-coun
 
 // Generate star rating HTML
 function generateStars(rating) {
-return `<span class="rating-text">${rating}/5</span>`;
+let stars = '';
+for (let i = 1; i <= 5; i++) {
+    if (i <= rating) {
+        stars += '<i class="fas fa-star text-yellow-400"></i>';
+    } else if (i - 0.5 <= rating) {
+        stars += '<i class="fas fa-star-half-alt text-yellow-400"></i>';
+    } else {
+        stars += '<i class="far fa-star text-gray-300"></i>';
+    }
+}
+return stars + `<span class="ml-2 text-sm text-gray-600">(${rating}/5)</span>`;
 }
 
 // Category button event listeners
 document.querySelectorAll('.category-btn').forEach(btn => {
 btn.addEventListener('click', function() {
 // Remove active class from all buttons
-document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
+document.querySelectorAll('.category-btn').forEach(b => {
+    b.classList.remove('active');
+    b.classList.remove('bg-primary', 'text-white');
+    b.classList.add('bg-gray-200', 'text-gray-700');
+});
 // Add active class to clicked button
 this.classList.add('active');
+this.classList.remove('bg-gray-200', 'text-gray-700');
+this.classList.add('bg-primary', 'text-white');
 // Render doctors for selected category
 renderDoctors(this.dataset.category);
 });
@@ -386,6 +539,42 @@ findDoctorsByLocation(county, subcounty, specialty);
 });
 }
 
+// New filter search by name and location
+const filterSearchBtn = document.getElementById('filter-search-btn');
+if (filterSearchBtn) {
+filterSearchBtn.addEventListener('click', function() {
+const searchName = document.getElementById('search-name').value.trim().toLowerCase();
+const searchLocation = document.getElementById('search-location').value.trim().toLowerCase();
+const searchSpecialty = document.getElementById('search-specialty').value;
+
+const filteredResults = doctors.filter(doctor => {
+const matchesName = !searchName || doctor.name.toLowerCase().includes(searchName);
+const matchesLocation = !searchLocation || (doctor.location && doctor.location.toLowerCase().includes(searchLocation)) || (doctor.facility && doctor.facility.toLowerCase().includes(searchLocation));
+const matchesSpecialty = !searchSpecialty || doctor.category === searchSpecialty;
+return matchesName && matchesLocation && matchesSpecialty;
+});
+
+const feedback = document.getElementById('local-search-feedback');
+if (filteredResults.length > 0) {
+if (feedback) {
+const filters = [];
+if (searchName) filters.push(`name: "${searchName}"`);
+if (searchLocation) filters.push(`location: "${searchLocation}"`);
+if (searchSpecialty) filters.push(`specialty: ${searchSpecialty}`);
+feedback.textContent = `Found ${filteredResults.length} doctor(s) matching ${filters.join(', ')}`;
+feedback.className = 'text-center text-sm text-accent font-medium py-2';
+}
+renderDoctorList(filteredResults);
+} else {
+if (feedback) {
+feedback.textContent = 'No doctors found matching your criteria. Try adjusting your search.';
+feedback.className = 'text-center text-sm text-red-500 font-medium py-2';
+}
+renderDoctors();
+}
+});
+}
+
 const ratingForm = document.getElementById('doctor-rating-form');
 if (ratingForm) {
 ratingForm.addEventListener('submit', function(e) {
@@ -411,30 +600,92 @@ document.querySelectorAll('#stars span').forEach((star) => star.textContent = '�
 }
 
 // Modal functionality
-const modal = document.getElementById('doctor-modal');
-const closeBtn = document.querySelector('.close');
-
 function openDoctorModal(doctor) {
-document.getElementById('doctor-image').src = doctor.image;
-document.getElementById('doctor-name').textContent = doctor.name;
-document.getElementById('doctor-specialty').textContent = doctor.specialty;
-document.getElementById('doctor-rating').innerHTML = generateStars(doctor.rating);
-document.getElementById('doctor-description').textContent = doctor.description;
-document.getElementById('doctor-experience').textContent = doctor.experience;
-document.getElementById('doctor-education').textContent = doctor.education;
+const modal = document.getElementById('doctor-modal');
+const modalContent = document.getElementById('modal-content');
 
-modal.style.display = 'block';
+modalContent.innerHTML = `
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div class="text-center">
+            <img src="${doctor.image}" alt="${doctor.name}" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">${doctor.name}</h3>
+            <p class="text-lg text-primary font-medium mb-2">${doctor.specialty}</p>
+            <div class="flex justify-center mb-4">
+                ${generateStars(doctor.rating)}
+            </div>
+            <p class="text-gray-600 mb-4">${doctor.description}</p>
+            <div class="text-left space-y-2 mb-4">
+                <p><strong class="text-gray-900">Location:</strong> <span class="text-gray-600">${doctor.location}</span></p>
+                <p><strong class="text-gray-900">Phone:</strong> <div class="flex flex-wrap gap-2 mt-1">${doctor.phone.map(phone => `<a href="tel:${phone}" class="bg-primary text-white px-3 py-1 rounded-lg hover:bg-blue-700 transition duration-300 text-sm font-medium"><i class="fas fa-phone mr-1"></i>${phone}</a>`).join('')}</div></p>
+                <p><strong class="text-gray-900">Email:</strong> <a href="mailto:${doctor.email}" class="text-primary hover:underline">${doctor.email}</a></p>
+                ${doctor.facility ? `<p><strong class="text-gray-900">Facility:</strong> <span class="text-gray-600">${doctor.facility}</span></p>` : ''}
+            </div>
+        </div>
+        <div>
+            <h4 class="text-xl font-bold text-gray-900 mb-4">Book Appointment</h4>
+            <form id="booking-form" class="space-y-4">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
+                    <input type="text" id="patient-name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Your Email</label>
+                    <input type="email" id="patient-email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Your Phone</label>
+                    <input type="tel" id="patient-phone" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Appointment Date</label>
+                    <input type="date" id="appointment-date" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Preferred Time</label>
+                    <select id="appointment-time" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                        <option value="">Select Time</option>
+                        <option value="09:00">9:00 AM</option>
+                        <option value="10:00">10:00 AM</option>
+                        <option value="11:00">11:00 AM</option>
+                        <option value="14:00">2:00 PM</option>
+                        <option value="15:00">3:00 PM</option>
+                        <option value="16:00">4:00 PM</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Reason for Visit</label>
+                    <textarea id="appointment-reason" rows="3" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-primary text-white py-3 rounded-lg hover:bg-blue-700 transition duration-300 font-medium">
+                    Book Appointment
+                </button>
+            </form>
+        </div>
+    </div>
+`;
+
+modal.classList.remove('hidden');
+
+// Handle booking form submission
+document.getElementById('booking-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Appointment booked successfully! You will receive a confirmation email shortly.');
+    closeModal();
+});
 }
 
-closeBtn.onclick = function() {
-modal.style.display = 'none';
+function closeModal() {
+const modal = document.getElementById('doctor-modal');
+modal.classList.add('hidden');
 }
 
-window.onclick = function(event) {
-if (event.target == modal) {
-modal.style.display = 'none';
+// Close modal when clicking outside or on close button
+document.getElementById('close-modal').addEventListener('click', closeModal);
+document.getElementById('doctor-modal').addEventListener('click', function(e) {
+if (e.target === this) {
+    closeModal();
 }
-}
+});
 // Initialize doctors on page load
 document.addEventListener('DOMContentLoaded', () => {
 renderDoctors();
